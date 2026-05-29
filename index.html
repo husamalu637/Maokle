@@ -20,27 +20,37 @@
             background-color: var(--bg);
             color: var(--text);
             font-family: 'Cairo', sans-serif;
-            margin: 0; padding: 0;
-            display: flex; flex-direction: column; align-items: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         header {
             width: 100%;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
-            padding: 40px 0; text-align: center;
+            padding: 40px 0;
+            text-align: center;
             box-shadow: 0 4px 20px rgba(0,0,0,0.5);
         }
 
-        header h1 { margin: 0; font-size: 2.2rem; font-weight: 900; }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 900;
+        }
 
         .main-container {
-            max-width: 900px; width: 95%; margin: 30px auto;
+            max-width: 900px;
+            width: 95%;
+            margin: 30px auto;
         }
 
         .video-wrapper {
             background: #000;
             border-radius: 20px;
-            overflow: hidden; 
+            overflow: hidden;
             border: 3px solid var(--primary);
             box-shadow: 0 10px 30px rgba(0, 210, 255, 0.2);
             margin-bottom: 30px;
@@ -50,18 +60,17 @@
 
         .responsive-iframe {
             position: relative;
-            padding-bottom: 56.25%; 
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
         }
 
         .responsive-iframe iframe {
             position: absolute;
-            /* القياس المعتمد (منزل قليلاً) */
-            top: -145px; 
+            top: -145px;
             left: 0;
             width: 100%;
-            height: calc(100% + 145px); 
+            height: calc(100% + 145px);
             border: 0;
         }
 
@@ -92,13 +101,39 @@
             transition: 0.3s ease;
         }
 
-        .ep-btn:hover { background: var(--primary); color: #000; }
-        .ep-btn.active { background: var(--accent); color: #000; border-color: var(--accent); }
+        .ep-btn:hover {
+            background: var(--primary);
+            color: #000;
+        }
 
-        footer { margin: 40px 0; opacity: 0.5; font-size: 0.8rem; }
+        .ep-btn.active {
+            background: var(--accent);
+            color: #000;
+            border-color: var(--accent);
+        }
+
+        footer {
+            margin: 40px 0;
+            opacity: 0.5;
+            font-size: 0.8rem;
+        }
     </style>
 </head>
 <body>
+
+<!-- البنر العلوي -->
+<div style="width:100%; text-align:center; margin:15px 0;">
+<script>
+  atOptions = {
+    'key' : 'b8ba5b25ff25e41ea44c2df3a1b05378',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/b8ba5b25ff25e41ea44c2df3a1b05378/invoke.js"></script>
+</div>
 
 <header>
     <h1>🎬 صدى الطفولة</h1>
@@ -106,7 +141,7 @@
 </header>
 
 <div class="main-container">
-    
+
     <div id="videoContainer" class="video-wrapper">
         <div class="responsive-iframe">
             <iframe id="mainIframe" src="" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
@@ -124,25 +159,73 @@
     <p>جميع الحقوق محفوظة - صدى الطفولة &copy; 2026</p>
 </footer>
 
+<!-- البنر السفلي -->
+<div style="width:100%; text-align:center; margin:15px 0;">
+<script>
+  atOptions = {
+    'key' : 'b8ba5b25ff25e41ea44c2df3a1b05378',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/b8ba5b25ff25e41ea44c2df3a1b05378/invoke.js"></script>
+</div>
+
 <script>
     const episodeLinks = [
-        "https://cartoony.net/watch/285/2584", "https://cartoony.net/watch/285/2585", "https://cartoony.net/watch/285/2586",
-        "https://cartoony.net/watch/285/2587", "https://cartoony.net/watch/285/2588", "https://cartoony.net/watch/285/2589",
-        "https://cartoony.net/watch/285/2590", "https://cartoony.net/watch/285/2591", "https://cartoony.net/watch/285/2592",
-        "https://cartoony.net/watch/285/2593", "https://cartoony.net/watch/285/2594", "https://cartoony.net/watch/285/2595",
-        "https://cartoony.net/watch/285/2596", "https://cartoony.net/watch/285/2597", "https://cartoony.net/watch/285/2598",
-        "https://cartoony.net/watch/285/2599", "https://cartoony.net/watch/285/2600", "https://cartoony.net/watch/285/2601",
-        "https://cartoony.net/watch/285/2602", "https://cartoony.net/watch/285/2603", "https://cartoony.net/watch/285/2604",
-        "https://cartoony.net/watch/285/2605", "https://cartoony.net/watch/285/2606", "https://cartoony.net/watch/285/2607",
-        "https://cartoony.net/watch/285/2608", "https://cartoony.net/watch/285/2609", "https://cartoony.net/watch/285/2610",
-        "https://cartoony.net/watch/285/2611", "https://cartoony.net/watch/285/2612", "https://cartoony.net/watch/285/2613",
-        "https://cartoony.net/watch/285/2614", "https://cartoony.net/watch/285/2615", "https://cartoony.net/watch/285/2616",
-        "https://cartoony.net/watch/285/2617", "https://cartoony.net/watch/285/2618", "https://cartoony.net/watch/285/2619",
-        "https://cartoony.net/watch/285/2620", "https://cartoony.net/watch/285/2621", "https://cartoony.net/watch/285/2622",
-        "https://cartoony.net/watch/285/2623", "https://cartoony.net/watch/285/2624", "https://cartoony.net/watch/285/2625",
-        "https://cartoony.net/watch/285/2626", "https://cartoony.net/watch/285/2627", "https://cartoony.net/watch/285/2628",
-        "https://cartoony.net/watch/285/2629", "https://cartoony.net/watch/285/2630", "https://cartoony.net/watch/285/2631",
-        "https://cartoony.net/watch/285/2632", "https://cartoony.net/watch/285/2633", "https://cartoony.net/watch/285/2634",
+        "https://cartoony.net/watch/285/2584",
+        "https://cartoony.net/watch/285/2585",
+        "https://cartoony.net/watch/285/2586",
+        "https://cartoony.net/watch/285/2587",
+        "https://cartoony.net/watch/285/2588",
+        "https://cartoony.net/watch/285/2589",
+        "https://cartoony.net/watch/285/2590",
+        "https://cartoony.net/watch/285/2591",
+        "https://cartoony.net/watch/285/2592",
+        "https://cartoony.net/watch/285/2593",
+        "https://cartoony.net/watch/285/2594",
+        "https://cartoony.net/watch/285/2595",
+        "https://cartoony.net/watch/285/2596",
+        "https://cartoony.net/watch/285/2597",
+        "https://cartoony.net/watch/285/2598",
+        "https://cartoony.net/watch/285/2599",
+        "https://cartoony.net/watch/285/2600",
+        "https://cartoony.net/watch/285/2601",
+        "https://cartoony.net/watch/285/2602",
+        "https://cartoony.net/watch/285/2603",
+        "https://cartoony.net/watch/285/2604",
+        "https://cartoony.net/watch/285/2605",
+        "https://cartoony.net/watch/285/2606",
+        "https://cartoony.net/watch/285/2607",
+        "https://cartoony.net/watch/285/2608",
+        "https://cartoony.net/watch/285/2609",
+        "https://cartoony.net/watch/285/2610",
+        "https://cartoony.net/watch/285/2611",
+        "https://cartoony.net/watch/285/2612",
+        "https://cartoony.net/watch/285/2613",
+        "https://cartoony.net/watch/285/2614",
+        "https://cartoony.net/watch/285/2615",
+        "https://cartoony.net/watch/285/2616",
+        "https://cartoony.net/watch/285/2617",
+        "https://cartoony.net/watch/285/2618",
+        "https://cartoony.net/watch/285/2619",
+        "https://cartoony.net/watch/285/2620",
+        "https://cartoony.net/watch/285/2621",
+        "https://cartoony.net/watch/285/2622",
+        "https://cartoony.net/watch/285/2623",
+        "https://cartoony.net/watch/285/2624",
+        "https://cartoony.net/watch/285/2625",
+        "https://cartoony.net/watch/285/2626",
+        "https://cartoony.net/watch/285/2627",
+        "https://cartoony.net/watch/285/2628",
+        "https://cartoony.net/watch/285/2629",
+        "https://cartoony.net/watch/285/2630",
+        "https://cartoony.net/watch/285/2631",
+        "https://cartoony.net/watch/285/2632",
+        "https://cartoony.net/watch/285/2633",
+        "https://cartoony.net/watch/285/2634",
         "https://cartoony.net/watch/285/2635"
     ];
 
@@ -155,18 +238,30 @@
         const btn = document.createElement('button');
         btn.className = 'ep-btn';
         btn.innerText = index + 1;
+
         btn.onclick = function() {
-            window.open('https://www.profitablecpmratenetwork.com/e41dj2h87?key=bef514b5ca3fa945e7a3b60e4a9ef21a', '_blank');
             container.style.display = 'block';
             iframe.src = link;
-            titleDisp.innerText = "أنت تشاهد الآن: ماوكلي - حلقة " + (index + 1);
-            document.querySelectorAll('.ep-btn').forEach(b => b.classList.remove('active'));
+
+            titleDisp.innerText =
+                "أنت تشاهد الآن: ماوكلي - حلقة " + (index + 1);
+
+            document.querySelectorAll('.ep-btn').forEach(b =>
+                b.classList.remove('active')
+            );
+
             btn.classList.add('active');
-            container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            container.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         };
+
         grid.appendChild(btn);
     });
 </script>
 
 </body>
 </html>
+```
